@@ -1,0 +1,1093 @@
+https://www.python.org  --->-- download --->--- python //Install python package 
+
+We can learn General python programming
+	     ===========================
+		pip install numpy
+		pip install pandas
+		pip install matplotlib
+		pip install scikit-learn
+		..
+		..
+		..
+		pip install nltlk
+		..
+
+https://www.anaconda.com/download --->-- download --->-- python //
+		we can do general python programming
+			+
+		we can numpy operation
+			+
+		we can data analysis using pandas 
+			+
+		we can do data visualization - using matplotlib
+			+
+		we can do ML 
+			..
+----------------------------------------------------------------
+
+Python - Errors
+----------------
+ 1. Syntax Error -  We are not following python rules
+ 
+ 2. Logical Error - We are following python syntax - but logical  error - Exeception 
+		   # we can handle this error
+
+E:\>
+  file: p1.py
+ +----------------------+
+ print("one")
+ print("two")
+ print("three")
+ print("four")
+ print("five")
+ print("Test-1")
+ print("Test-2")
+ print(10)
+ print(20)
++-----------------------+
+
+E:\> python p1.py {enter}
+one
+two
+three
+four
+five
+Test-1
+Test-2
+10
+20
+E:\>
+
+E:\>
+  file: p2.py
+ +----------------------+
+ print("one")
+ print("two")
+ print("three")
+ print("four")
+ print("five)
+ print("Test-1")
+ print("Test-2")
+ print(10)
+ print(20)
++-----------------------+
+
+E:\> python p2.py {enter}
+
+SyntaxError 
+
+
+
+E:\>
+  file: p3.py
+ +----------------------+
+ print("one")
+ print("two")
+ print("three")
+ print("four")
+ print("five")
+ print("A"+5)
+ print("Test-1")
+ print("Test-2")
+ print(10+20)
+ 
++-----------------------+
+
+E:\> python p3.py {enter}
+one
+two
+three
+four
+five
+TypeError "A"+5 ..... Exit
+#############################################################################
+new to python (or) programming 
+
+Step 1: What is topic ( Understand the definition about the topic )
+|
+Step 2: Understand the topic Syntax(Rules)
+|
+Step 3: Refer an existing examples 
+|
+Step 4: Exercise 
+
+Variable
+----------
+|->placeholder - holding a Value
+
+print('productName is:Laptop')
+print('Laptop price is:34560.44')
+print('Laptop dispatch status is True')
+
+
+print('productName is:Mobile')
+print('Mobile price is:15000.24')
+print('Mobile dispatch status is False')
+
+Syntax:-
+----------
+variableName = value
+
+rule-1: Variblename starts with a-zA-Z_
+rule-2: Variablename not allows space,specialchars 
+rule-3: Variablename not starts with digit 
+
+product_name = "Laptop"
+print("product name is: product_name") -->
+
+
+
+C:\Users\karth>python
+Python 3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>> print("Hello")
+Hello
+>>>
+>>>  print("Welcome")
+  File "<python-input-3>", line 1
+    print("Welcome")
+IndentationError: unexpected indent
+>>>
+>>> product_name = "Laptop"
+>>> print("Product name is:product_name")
+Product name is:product_name
+>>>
+>>>
+>>> print(product_name)
+Laptop
+>>>
+>>> print('product_name')
+product_name
+>>>
+>>> print(Product_name)
+Traceback (most recent call last):
+  File "<python-input-13>", line 1, in <module>
+    print(Product_name)
+          ^^^^^^^^^^^^
+NameError: name 'Product_name' is not defined. Did you mean: 'product_name'?
+>>>
+>>> print("Product name is:",product_name)
+Product name is: Laptop
+>>>
+>>> App="demo-1"
+>>> app="test-1"
+>>> APP="OLA"
+>>> print(App)
+demo-1
+>>> print(app)
+test-1
+>>> print(APP)
+OLA
+>>> print(aPP)
+Traceback (most recent call last):
+  File "<python-input-23>", line 1, in <module>
+    print(aPP)
+          ^^^
+NameError: name 'aPP' is not defined. Did you mean: 'APP'?
+>>>
+>>>
+>>> product_name="Laptop"
+>>> product_cost=34560.32
+>>>
+>>> print(product_cost)
+34560.32
+>>>
+>>> product_cost * 0.18
+6220.857599999999
+>>>
+>>> tax = product_cost * 0.18
+>>> print(tax)
+6220.857599999999
+>>> print(product_cost)
+34560.32
+>>>
+>>> product_cost + tax
+40781.177599999995
+>>>
+>>> total = product_cost + tax
+>>>
+>>> print("Total Cost including GST:",total)
+Total Cost including GST: 40781.177599999995
+>>>
+>>>
+>>> print("Total Cost including GST:",total,"Rs")
+Total Cost including GST: 40781.177599999995 Rs
+>>>
+
+#####################################################################################
+
+pname = "Laptop"
+pcost = 45900.32
+
+print("product name is:",pname)
+print(pname,"Cost is:",pcost)
+-------------------------------------//1st style 
+
+print("product name is:{}".format(pname))
+print("{} Cost is:{}".format(pname,pcost))
+----------------------------------------------//2nd style 
+
+
+Product name is:Laptop and cost is:45900.32
+------------------------------------------------// 
+ | --> print("Product name is:{} and cost is:{}".format(pname,pcost))
+
+
+print(f"Product name is:{pname} and cost is:{pcost}")
+Product name is:Laptop and cost is:45900.45
+------------------------------------------------------------//3rd style 
+#####################################################################################
+
+int float complex
+boolean type --> True False 
+NoneType -->None
+
+Collection - more than one value
+==========
+   |-> string - str - Collection of chars - '' (or) ""  (ex: 'abc' '45' 'True' 'False')
+
+type() - determine python type
+------
+type(namedVariable) (or) type(value)
+>>>
+>>> print(type(10))
+<class 'int'>
+>>>
+>>> print(type(10.0))
+<class 'float'>
+>>>
+>>> n = 10
+>>> print(type(n))
+<class 'int'>
+>>> n = "Hello"
+>>> print(type(n))
+<class 'str'>
+>>>
+>>> print(type(True))
+<class 'bool'>
+>>>
+>>> print(type('True'))
+<class 'str'>
+>>>
+
+
+Collection - more than one value
+==========
+   |-> string - str - Collection of chars - '' (or) ""  (ex: 'abc' '45' 'True' 'False')
+   |-> bytes - bytes - Collection of ASCII Code   b'' (ex: b'Hello')
+   
+   |-> list - Collection of different types of values  [ ]
+
+>>> product_info = ["Laptop",58934.23,True,5]
+>>> print(type(product_info))
+<class 'list'>
+>>> print(product_info)
+['Laptop', 58934.23, True, 5]
+>>>
+>>> print(type(''))
+<class 'str'>
+>>> print(type([]))
+<class 'list'>
+>>>
+
+Collection - more than one value
+==========
+|-> string - str - Collection of chars - '' (or) ""  (ex: 'abc' '45' 'True' 'False') - index based - immutable
+|-> bytes - bytes - Collection of ASCII Code   b'' (ex: b'Hello') - index based - immutable 
+   
+   |-> list - Collection of different types of values  [ ]  - index based - mutable - We can add/modify/delete
+
+|-> tuple - Collection of different types of values ( ) - index based - immutable - We can't add/modify/delete 
+ 
+
+>>> print(type(''))
+<class 'str'>
+>>> print(type([]))
+<class 'list'>
+>>>
+>>> print(type(()))
+<class 'tuple'>
+>>>
+>>> product_info = ("Laptop",58934.23,True,5)
+>>> print(type(product_info))
+<class 'tuple'>
+>>> print(product_info)
+('Laptop', 58934.23, True, 5)
+>>>
+
+Collection - more than one value
+==========
+|-> string - str - Collection of chars - '' (or) ""  (ex: 'abc' '45' 'True' 'False') - index based - immutable
+|-> bytes - bytes - Collection of ASCII Code   b'' (ex: b'Hello') - index based - immutable 
+   
+   |-> list - Collection of different types of values  [ ]  - index based - mutable - We can add/modify/delete
+
+|-> tuple - Collection of different types of values ( ) - index based - immutable - We can't add/modify/delete 
+ 
+  |->dict - Collection of different types of value - NOT Index based - Key:Value//data - mutable 
+                                                                        - We can add/modify/delete
+
+dictName = {} 
+
+dictName = {'Key1':Value,'Key2':Value,'Key3':value,....'Kn':Value} 
+		  -     |            |            |
+dict Key must be unique 
+dict value can be duplicate 
+
+d={'K1':10,'K2':20,'K3':30} //OK
+
+d={'K1':10,'K2':20,'K1':30} 
+		    ---  # duplicate key
+print(d) -> {'K1':30,'K2':20} 
+
+d={'K1':10,'K2':10,'K3':10} # OK - dict value can be duplicate  
+print(d)
+    -------->{'K1':10,'K2':10,'K3':10}
+
+s = 'python'			--->  | p | y | t | h | o | n |
+				        0   1   2   3   4   5  <== index
+
+L = [10,20,30,40,'D1','D2',True]  ---> | 10 | 20 | 30 | 40 | 'D1' | 'D2' | True |
+				     | 0  |  1 |  2 |  3 |   4  |  5   |  6 <=== index
+
+
+T = (10,20,30,40,'D1','D2',True)  ---> | 10 | 20 | 30 | 40 | 'D1' | 'D2' | True |
+				     | 0  |  1 |  2 |  3 |   4  |  5   |  6 <=== index
+
+d = {'K1':10,'K2':'data','K3':98.45,'K4':True)
+
+		+---------------------------+
+		|   Key       |   Value     |
+		+-------------|-------------+
+		|   K1        |    10       |
+		+-------------|-------------+
+		|   K2        |    data     |
+		+-------------|-------------+
+		|   K3        |   98.45     |
+		+-------------|-------------+
+		|   K4        |    True     |
+		+-------------|-------------+
+
+###################################################
+string - str
+---------------
+ 1. Collection of chars
+ 2.  '' (or) ""
+ 3. immutable 
+ 4. index based access
+ 5. Example
+ s = 'python'			--->  | p | y | t | h | o | n |
+				        0   1   2   3   4   5  <== index
+
+How to fetch/get nth index value?
+
+stringName[index] -->Value /IndexError
+
+print(s[1]) --> 'y' 
+print(s[2]) -->'t'
+print(s[5]) --->'n'
+
+print(s[6]) --->IndexError
+print(s[9]) --->IndexError
+
+
+len(inputCollection) --->--outputInt 
+=== 
+					---->-----
+ s = 'python'			--->  | p | y | t | h | o | n |
+				        0   1   2   3   4   5  <== index
+
+						---<----
+ s = 'python'			--->  | p | y | t | h | o | n |
+				       -6  -5  -4   -3  -2  -1  <== index
+
+s[-6] same as s[0]
+
+print(s[-1]) --> n
+print(s[-6]) --> p
+
+print(s[-7]) -->IndexError
+
+>>> s='python is a general purpose programming language'
+>>>
+>>> len(s)
+48
+>>> s[0]
+'p'
+>>> s[1]
+'y'
+>>> s[-1]
+'e'
+>>> s[-2]
+'g'
+>>> s[-3]
+'a'
+>>> ## Slicing - group of / range of chars
+>>> ## stringName[n:m] --> from nth index to m-1 index
+>>> s[5:17] # from 5th index to 16th index(17-1)
+'n is a gener'
+>>>
+>>>
+>>> ## stringName[n:] --> from nth index to ALL
+>>> s[5:]
+'n is a general purpose programming language'
+>>> s[8:]
+'s a general purpose programming language'
+>>> s[15:]
+'eral purpose programming language'
+>>>
+>>>
+>>> ## stringName[:m] --> from 0th index to m-1
+>>> s[:5]
+'pytho'
+>>> s[:15]
+'python is a gen'
+>>>
+>>> s[-4] # -4th index from RHS ->LHS order
+'u'
+>>> s[-4:] # slicing - last 4chars
+'uage'
+>>>
+>>> s[-7:] # slicing - last 7chars
+'anguage'
+>>>
+
+
+>>> var = 120
+>>> print(var)
+120
+>>> del(var)
+>>>
+>>> print(var)
+Traceback (most recent call last):
+  File "<python-input-140>", line 1, in <module>
+    print(var)
+          ^^^
+NameError: name 'var' is not defined. Did you mean: 'vars'?
+>>>
+>>> s='hello'
+>>> s[0]
+'h'
+>>> del(s[0])
+Traceback (most recent call last):
+  File "<python-input-144>", line 1, in <module>
+    del(s[0])
+        ~^^^
+TypeError: 'str' object doesn't support item deletion
+>>>
+>>> s[0]='X'
+Traceback (most recent call last):
+  File "<python-input-146>", line 1, in <module>
+    s[0]='X'
+    ~^^^
+TypeError: 'str' object does not support item assignment
+>>>
+>>> va = s[0]
+>>> va
+'h'
+>>> s
+'hello'
+>>>
+>>> var = 120
+>>> print(var)
+120
+>>> del(var)
+>>>
+>>> print(var)
+Traceback (most recent call last):
+  File "<python-input-140>", line 1, in <module>
+    print(var)
+          ^^^
+NameError: name 'var' is not defined. Did you mean: 'vars'?
+>>>
+>>> L=['Data1','Data2','Data3','D4','D5',10,20,30]
+>>>
+>>> len(L)
+8
+>>> len([])
+0
+>>> L[0]
+'Data1'
+>>> L[1]
+'Data2'
+>>> L[-3:]
+[10, 20, 30]
+>>> L[:3]
+['Data1', 'Data2', 'Data3']
+>>> L[2:6]
+['Data3', 'D4', 'D5', 10]
+>>>
+>>> # List is mutable
+>>> L
+['Data1', 'Data2', 'Data3', 'D4', 'D5', 10, 20, 30]
+>>> L[1] = 150 # we can modify
+>>> L
+['Data1', 150, 'Data3', 'D4', 'D5', 10, 20, 30]
+>>>
+>>> del(L[2])
+>>>
+>>> len(L)
+7
+>>> L
+['Data1', 150, 'D4', 'D5', 10, 20, 30]
+>>>
+>>> T=('D1','D2','D3',10,20,30,40)
+>>> len(T)
+7
+>>> T[0]
+'D1'
+>>> T[1]
+'D2'
+>>> T[-3:]
+(20, 30, 40)
+>>> T[:3]
+('D1', 'D2', 'D3')
+>>>
+>>> T[1]
+'D2'
+>>> T[1] = 150
+Traceback (most recent call last):
+  File "<python-input-179>", line 1, in <module>
+    T[1] = 150
+    ~^^^
+TypeError: 'tuple' object does not support item assignment
+>>>
+>>> del(T[1])
+Traceback (most recent call last):
+  File "<python-input-181>", line 1, in <module>
+    del(T[1])
+        ~^^^
+TypeError: 'tuple' object doesn't support item deletion
+>>>
+>>> T
+('D1', 'D2', 'D3', 10, 20, 30, 40)
+>>>
+>>>
+
+################################################################################
+list - []		Vs		dict - {}
+
+mutable					mutable 
+L = [10,3.4,'D1',True]			d = {'K1':10,'K2':3.4,'K3':'D1','K4':True}
+
+# To get single data			# To get single data
+ListName[index] ->Value/IndexError	dictName['KeyName'] ->Value/KeyError 
+
+# To modify nth data			# To modify nth data			
+ListName[oldIndex] = updatedValue 	dictName['OldKey'] = updatedValue
+
+
+# To delete nth data			# To delete nth data		
+del(Listname[oldIndex]) 		del(dictname['oldKey']) 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+>>> L=['Data1','Data2','Data3','D4','D5',10,20,30]
+>>>
+>>> len(L)
+8
+>>> len([])
+0
+>>> L[0]
+'Data1'
+>>> L[1]
+'Data2'
+>>> L[-3:]
+[10, 20, 30]
+>>> L[:3]
+['Data1', 'Data2', 'Data3']
+>>> L[2:6]
+['Data3', 'D4', 'D5', 10]
+>>>
+>>> # List is mutable
+>>> L
+['Data1', 'Data2', 'Data3', 'D4', 'D5', 10, 20, 30]
+>>> L[1] = 150 # we can modify
+>>> L
+['Data1', 150, 'Data3', 'D4', 'D5', 10, 20, 30]
+>>>
+>>> del(L[2])
+>>>
+>>> len(L)
+7
+>>> L
+['Data1', 150, 'D4', 'D5', 10, 20, 30]
+>>>
+>>> T=('D1','D2','D3',10,20,30,40)
+>>> len(T)
+7
+>>> T[0]
+'D1'
+>>> T[1]
+'D2'
+>>> d={'K1':'V1','K2':1.45,'K3':44}
+>>>
+>>> d['K1']
+'V1'
+>>> d['K2']
+1.45
+>>>
+>>> d['K3']
+44
+>>> d['K4']
+Traceback (most recent call last):
+  File "<python-input-191>", line 1, in <module>
+    d['K4']
+    ~^^^^^^
+KeyError: 'K4'
+>>>
+>>> d['k1']
+Traceback (most recent call last):
+  File "<python-input-193>", line 1, in <module>
+    d['k1']
+    ~^^^^^^
+KeyError: 'k1'
+>>>
+>>> len(d)
+3
+>>>
+>>> d
+{'K1': 'V1', 'K2': 1.45, 'K3': 44}
+>>>
+>>>
+>>> d['K1']
+'V1'
+>>>
+>>> d['K1'] = 1345 # modification
+>>>
+>>> d
+{'K1': 1345, 'K2': 1.45, 'K3': 44}
+>>>
+>>>
+>>>
+>>> L=[10,20,30,40]
+>>> L[1]
+20
+>>> L[1] = 'index.html'
+>>> L
+[10, 'index.html', 30, 40]
+>>>
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+label[index]
+-----//str <or> list <or> tuple
+ 
+label['string']
+-----//dict
+
+label = () //tuple 
+
+label() //functionCall
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+product 
+ |->pid			pid = 101
+ |->pname		pname = 'pA'
+ |->pcost		pcost = 34234.32
+ |->pstatus 		pstatus = True
+			-------------------//
+
+# list  
+	- display all the details
+	- modify product cost 
+	- display modified cost
+
+# tuple
+	- display all the details
+	- displat last two items
+
+# dict
+	- display all the details
+	- modify pstatus ->False
+	- display updated value
+
+
+
+>>> pid = 101
+>>> pname = 'pA'
+>>> pcost = 34234.32
+>>> pstatus = True
+>>>
+>>> product_info1 = [pid,pname,pcost,pstatus]
+>>> print(product_info1)
+[101, 'pA', 34234.32, True]
+>>> product_info1[2]
+34234.32
+>>> product_info1[2] = 5000.32
+>>> product_info1[2]
+5000.32
+>>> product_info1
+[101, 'pA', 5000.32, True]
+>>>
+>>> product_info2 = (pid,pname,pcost,pstatus)
+>>> product_info2
+(101, 'pA', 34234.32, True)
+>>>
+>>> product_info2[-2:]
+(34234.32, True)
+>>>
+>>> product_info3 = {'K1':pid,'K2':pname,'K3':pcost,'K4':pstatus}
+>>>
+>>> print(product_info3)
+{'K1': 101, 'K2': 'pA', 'K3': 34234.32, 'K4': True}
+>>>
+>>> product_info3['K4'] = False
+>>>
+>>> product_info3['K4']
+False
+>>> product_info3
+{'K1': 101, 'K2': 'pA', 'K3': 34234.32, 'K4': False}
+>>>
+================================================================================================
+function  --> print() len() type() del() .... label() 
+ 
+method	 ---> object.functionCall()
+	
+		"{}".format(variable)
+
+
+>>> s='python'
+>>>
+>>> s.upper()
+'PYTHON'
+>>>
+>>> s.title()
+'Python'
+>>>
+>>> 'abc'.upper()
+'ABC'
+>>>
+>>> 'ABCDE'.lower()
+'abcde'
+>>> help(str) 
+
+
+
+>>> s='python'
+>>>
+>>> s.upper()
+'PYTHON'
+>>> s.title()
+'Python'
+>>> s.strip()
+'python'
+>>>
+>>> s.strip('n')
+'pytho'
+>>> s.isupper()
+False
+>>> s.islower()
+True
+>>>
+>>> s='101,raj,sales,pune,1000'
+>>> len(s)
+23
+>>> type(s)
+<class 'str'>
+>>>
+>>> s.split(',')
+['101', 'raj', 'sales', 'pune', '1000']
+>>>
+>>> s.split(':')
+['101,raj,sales,pune,1000']
+>>>
+>>> help(s.split)
+
+
+
+
+>>> L=['D1','D2','D3','D4']
+>>>
+>>> # To add new data to an existing list
+>>> #    ===========================
+>>> # 1. Listname.append(Value) -> None
+>>> #
+>>> # 2. Listname.insert(index,Value) -> None
+>>> #
+>>>
+>>> L.append(45)
+>>>
+>>> L.append(56.42)
+>>>
+>>> L
+['D1', 'D2', 'D3', 'D4', 45, 56.42]
+>>>
+>>> L.insert(1,True)
+>>>
+>>> L
+['D1', True, 'D2', 'D3', 'D4', 45, 56.42]
+>>>
+>>>
+>>> # To remove an nth value from given List
+>>> #  del(ListName[OLD-index]) -> None
+>>> #
+>>> #  ListName.pop(OLD-index) -> removedValue
+>>>
+>>> del(L[1])
+>>>
+>>> L
+['D1', 'D2', 'D3', 'D4', 45, 56.42]
+>>>
+>>> L.pop(1)
+'D2'
+>>>
+
+
+>>> L=['D1','D2','D3','D4']
+>>>
+>>> # To add new data to an existing list
+>>> #    ===========================
+>>> # 1. Listname.append(Value) -> None
+>>> #
+>>> # 2. Listname.insert(index,Value) -> None
+>>> #
+>>>
+>>> L.append(45)
+>>>
+>>> L.append(56.42)
+>>>
+>>>
+>>>
+>>> d={'K1':'V1'}
+>>>
+>>> # To get single value from given dict
+>>> # dictName['oldKey'] ->Value / KeyError
+>>>
+>>> d['K1']
+'V1'
+>>> d['k1']
+Traceback (most recent call last):
+  File "<python-input-334>", line 1, in <module>
+    d['k1']
+    ~^^^^^^
+KeyError: 'k1'
+>>>
+>>> # dictName.get('oldKey') ->Value / None
+>>>
+>>> d.get('K1')
+'V1'
+>>> d.get('k1')
+>>>
+>>> ## To add new data to an existing dict                                      >>> # dic>>> # dictName['newKey'] = value -->(1)  <or>  dictName.setdefault('newKey',Val\ue)
+>>>
+>>>
+>>> d
+{'K1': 'V1'}
+>>> d['K1'] = 'value-1'  # modification --> the Key 'K1' is already exist
+>>> d
+{'K1': 'value-1'}
+>>>
+>>> d['K2
+  File "<python-input-349>", line 1
+    d['K2
+      ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>>
+>>>
+>>> d['K2'] = 'Value-2' # add
+>>> d
+{'K1': 'value-1', 'K2': 'Value-2'}
+>>>
+>>>
+>>> d
+{'K1': 'value-1', 'K2': 'Value-2'}
+>>>
+>>> del(d['K1']) # returns will be None
+>>>
+>>> d
+{'K2': 'Value-2'}
+>>>
+>>> # d.pop('oldKey') ->removedValue
+>>> #
+>>>
+>>> d.pop('K3')
+Traceback (most recent call last):
+  File "<python-input-365>", line 1, in <module>
+    d.pop('K3')
+    ~~~~~^^^^^^
+KeyError: 'K3'
+>>>
+>>> d.pop('K2')
+'Value-2'
+>>>
+>>> d
+{}
+>>>
+>>>
+###################################################################################
+Python operators
+----------------
+1. Arithmetic operators  
+  + - * / // ** % 
+ input types are: int,float --> int,float
+
+ 10 + 20 -> 30
+ 10 + 20.0 --> 30.0
+
+2. string operators
+    + * 
+ input types: str,int --> str 
+
+"A" + "B" -> "AB"
+
+"Hello" * 3 -> Hello Hello Hello
+
+3. Relational operators
+ == != < <=  > >= 
+input types: int,float,str  --> bool (True/False)
+
+4. Logical operators
+and or not 
+input types: int,float,str  --> bool (True/False)
+
+
+5. Membership operators - search
+in 
+not in 
+input types: str,list,tuple,dict,set -->bool (True/False)
+
+'pattern_string' in inputCollection ->bool 
+
+
+
+
+>>> s='101,raj,sales,pune'
+>>>
+>>> 'sales' in s
+True
+>>> files=['p1.java','p2.c','p3.java']
+>>>
+>>> 'emp.csv' in files
+False
+>>> 'p2.c' in files
+True
+>>>
+>>> "sales" == "sales"
+True
+>>> "sales" == "sales,"
+False
+>>> "sales" == "asfasfsdfadsfsad sales asfadsfsda,"
+False
+>>> "sales" == "asfasfsdfadsfsadsalesasfadsfsda,"
+False
+>>>
+>>> "sales" in "asfasfsdfadsfsad sales asfadsfsda,"
+True
+>>>
+>>> files=['p1.java','p2.c','p3.java']
+>>> 'p2.c' not in files
+False
+>>>
+>>> 'emp.csv' not in files
+True
+>>>
+>>> d={'K1':'V1'}
+>>>
+>>> 'K1' in d
+True
+>>> 'K2' in d
+False
+>>>
+
+  
+In Python any expression ->bool (or) any method/function ->bool // use conditional statement 
+
+>>> s='python'
+>>>
+>>> s.islower()
+True
+>>> if(s.islower()):
+...     print(f'Yes - Given string {s} is lowercase')
+... else:
+...     print('Sorry given string is not lowercase')
+...
+Yes - Given string python is lowercase
+>>>
+>>> #####
+>>>
+>>> s='45'
+>>> type(s)
+<class 'str'>
+>>>
+>>> s+100
+Traceback (most recent call last):
+  File "<python-input-452>", line 1, in <module>
+    s+100
+    ~^~~~
+TypeError: can only concatenate str (not "int") to str
+>>>
+>>> int(s)
+45
+>>>
+>>> int(s)+100
+145
+>>>
+>>>
+>>> cost=455.23
+>>>
+>>> type(cost)
+<class 'float'>
+>>> str(cost)
+'455.23'
+>>>
+>>> str(cost)+'Rs'
+'455.23Rs'
+>>>
+>>> n=56
+>>> type(n)
+<class 'int'>
+>>>
+>>> str(n)
+'56'
+>>> float(n)
+56.0
+>>> type(n)
+<class 'int'>
+>>> n
+56
+>>> n = str(n)
+>>> n
+'56'
+>>> L=['D1','D2']
+>>>
+>>> tuple(L)
+('D1', 'D2')
+>>>
+>>> T = tuple(L)
+>>> T
+('D1', 'D2')
+>>>
+>>> list(T)
+['D1', 'D2']
+>>>
+>>> n = '560'
+>>>
+>>> if(int(n) > 500):
+...     print('Yes')
+... else:
+...     print('No')
+...
+Yes
+>>>
+################################   End of DAY1 session ######################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
